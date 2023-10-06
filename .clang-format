@@ -1,0 +1,127 @@
+--- # what is .clang-format -> conjunto de ferramentas para utilizarmos a partir de bibliotecas; arquivo de configuração para o Cpp ou LLVM ?
+
+Language: Cpp #Language: Cpp define a linguagem utilizada, mas onde é utilizada e para que ? Baseado no LLVM ou seja, em uma máquina virtual
+
+AccessModifierOffset: -2 # o que é isso ? Identação extra
+
+AlignAfterOpenBracket: Align #ao abrir um parentes, conchetes, parentes angulares se é fechado automanticamente
+
+AlignConsecutiveAssignments: false # Alinha as declarações a partir de espaços; um embaixo do outro.
+
+AlignConsecutiveDeclarations: false # Alinha as declarações a partir de espaços.
+
+AlignEscapedNewlines: Right # Alinha a barra invertida de novas linhas na coluna mais a direita.
+
+AlignOperands: true # Alinha operadores binários e ternários
+
+AlignTrailingComments: true # Alinha comentários
+
+AllowAllParametersOfDeclarationOnNextLine: true #Coloca os parametros de uma função na próxima linha ou de forma personalisada segundo as opções.
+
+AllowShortBlocksOnASingleLine: false # Permite o uso de blocos de funções em apenas uma única linha.
+
+AllowShortCaseLabelsOnASingleLine: false # Permite escrever funções em uma única linha.
+
+AllowShortFunctionsOnASingleLine: None # Permite escrever pequenas funções em uma única linha.
+
+AllowShortIfStatementsOnASingleLine: false # Autoexplicativo
+AllowShortLoopsOnASingleLine: false # Autoexplicativo
+AlwaysBreakAfterDefinitionReturnType: None # deprecated
+
+AlwaysBreakAfterReturnType: None # Não irá continuar executando o programa ao encontrar um return.
+
+AlwaysBreakBeforeMultilineStrings: false # Após escrever um argumento, seu valor como string fica em uma nova linha.
+
+AlwaysBreakTemplateDeclaration: false # Pula uma linha após a declaração.
+
+BinPackArguments: true # se falso pula uma linha para cada argumento da função.
+
+BinPackParameters: true # se falso pula uma linha para cada parâmetro.
+
+BraceWrapping: # Configura individualmente o comportamento dos parentes, chave, chave angulares para cada uso.
+  AfterClass: false
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterFunction: false
+  AfterNamespace: false
+  AfterObjCDeclaration: false
+  AfterStruct: false
+  AfterUnion: false
+  AfterExternBlock: false
+  BeforeCatch: false
+  BeforeElse: false
+  IdentBraces: false
+  SplictEmptyFunction: true
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true
+BreakBeforeBinayOperators: None # Alinha operadores pós variáveis
+
+BreakBeforeBraces: Attach # Alinha chaves ao quebrar a linha
+
+BreakBeforeInheritanceComma: false #
+
+BreakBeforeTernaryOperators: True # Quebra a linha em linhas muito longas nos operadores ternários
+
+BreakContructorInitializarsBeforeComma: false # Em uma declaração de lista, antes da virgula se quebra uma linha
+
+BreakContructorInitializers: BeforeColon # Quebra uma linha em um contructor após a vírgula
+
+BreakAfterJavaFieldAnnotations: false #
+
+BreakStringLiterals: true # Em strings muito grandes, após o '=' se quebra a linha
+
+ColumnLimit: 80
+CommentPragmas : '^ IWYU pragma:' # Diferencia os comentários
+CompactNamespaces: false # Permite declarações consecutivas de 'namespace' na mesma linha;
+
+ContructorInitializerAllOnOneLineOrOnePerLine: false # deprecated
+
+ConstructorInitializerIdentWidth: 2 #
+
+ContianuationIndentWidth: 2 # Identação na quebra de linha de funções e constructors;
+
+Cpp11BracedListStyle: true # Espaçamento antes e depois da vírgula em uma lista;
+
+DerivePointerAlignment: false # Alinha ponteiros e operadores '&' para um formato mais comum;
+
+DisbleFormat: false # Desabilita formatação completamente;
+
+ExperimentalAutoDetectBinPacking: false # ?
+
+FixNamespaceComments: true # Adiciona no fim das chaves qual namespace está sendo fechado;
+
+ForEachMacros: # ?
+  - foreach
+  - Q_FOREACH
+  - BOOST_FOREACH
+
+IncludeBlocks: Preserve # Seprar cada '#include';
+
+IncludeCategories: # ? Talvez para buscar arquivos com o '#includes';
+  - Regex:        '^"(llvm|llvm-c|clang|clang-c)/'
+    Priority:     2
+  - Regex:        '^(<|"(gtest|gmock|isl|json)/)'
+    Priority:     3
+  - Regex:        '.*'
+    Priority:     1
+
+IncludeIsMainRegex: '(Test)?$' # ? Regex para buscar arquivos para bibliotecas
+
+IndentCaseLabels: false # Dentro da função 'switch' se false não é feita identações;
+
+IdentPPDirectives: None # Sem identações é declarações de bibliotecas e variáveis globais;
+
+IndentWidth: 2 # identação padrão;
+
+IndentWrappedFunctionNames: false # Faz a identação de um 'return' com indentação
+
+JavaScriptQuotes: Leave # ? Usar as aspas do javascript; 
+
+JavaScriptWrapImports: true # Permite quebrar longos importes das bibliotecas do JavaScript;
+
+KeepEmptyLinesAtTheStartOfBlocks: true # Coloca uma linha vazia após a inicialização de um bloco;
+
+MacroBlockBegin: ''
+
+
+
