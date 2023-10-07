@@ -121,7 +121,62 @@ JavaScriptWrapImports: true # Permite quebrar longos importes das bibliotecas do
 
 KeepEmptyLinesAtTheStartOfBlocks: true # Coloca uma linha vazia após a inicialização de um bloco;
 
-MacroBlockBegin: ''
+MacroBlockBegin: '' # ? Regular expression para facilitar a inicialização de um bloco;
 
+MacroBlockEnd: '' 
 
+MaxEMptyLinesToKeep: 1 # Pula uma linha dentro de contruções para facilitar a leitura;
+
+NamespaceIndentation: None # Declarações de namespace dentro de outro name space não sofre indentação, nem dentro do prórpio namespace;
+
+ObjCBlockndentWidth: 2 # Indentação dentro de blocos da ObjC;
+
+ObjCSpaceAfterProperty: false # Adiciona um espaço para facilitar a leitura na declaração de propriedades do objC;
+
+ObjCSpaceBeforeProtocolList: true # Após dois valores de uma lista, quebra a linha para facilitar a leitura;
+
+PenaltyBreakAssignment: 2 # ? A penalidade por violar um  operador de atribuição; ? o compilador interpreta certos hábtos como erro;
+
+PenaltyBreakComment: 300 # ? A penalidade em cada quebra de linha dentro de um comentário;
+
+PenaltyBreakFirstLessLess: 120 # ?
+
+PenaltyBreakString: 1000
+
+PenaltyExcessCharacter: 1000000
+
+PenaltyReturnTypeOnItsOwnLine: 60
+
+PointerAlignment: Right # Alinha o asterisco '*' de um ponteiro para a direita;
+
+ReflowComments: true # o clang tenta reformatar longos comentários segundo o comprimento da coluna;
+
+SortIncludes: false # Controla como o clang vai organizar o ''#include' 
+
+SpaceAfterCStyleCast: false # Coloca um espaço entre a tipagem e a variável em C;
+
+SpaceBeforeAssignmentOperators: true # Espaço entre a variável e o operador (a= b | a = b);
+
+SpaceBeforeParens: ControlStatements # Espaço entre uma estrutura e sua condição (if(...) | if (...));
+
+SpaceInEmptyParentheses: false # deprecated
+
+SpacesBeforeTrailingComments: 1 # Após '//' o comentário dá três espaços;
+
+SpacesInAngles: false # Coloca espaços em tipos como '< int >';
+
+SpacesInContainerLiterals: true # Coloca espaços dentro de containers '[ 1, 2, 3 ]';
+
+SpacesInCStyleCastParentheses: false # deprecated;
+
+SpacesInParentheses: false # Coloca espaço dentro dos parenteses;
+
+SpacesInSquareBrackets: false # Coloca espaço dentro de conchetes;
+
+Standard: Cpp11 # Configura o conjunto de estruturas para o padrão de determinada versão;
+
+TabWidth: 2 # Número de espaços colocados ao pressionar o tap;
+
+UseTab: Never 
+...
 
